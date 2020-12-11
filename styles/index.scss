@@ -1,0 +1,134 @@
+@import "variables";
+@import "null";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+body {
+	font-weight: 300;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #141b1c;
+}
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	overflow-x: auto;
+}
+.price-card {
+	width: 380px;
+	height: 770px;
+	text-align: center;
+	background: #334247;
+	box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+	margin: 9px;
+	overflow: hidden;
+	position: relative;
+	&._green {
+		.price-card__price,
+		.price-card__order-btn {
+			background: #5bb189;
+		}
+		svg {
+			fill: #5bb189;
+		}
+	}
+	&._blue {
+		.price-card__price,
+		.price-card__order-btn {
+			background: #3a6ba5;
+		}
+		svg {
+			fill: #3a6ba5;
+		}
+	}
+	&._orange {
+		.price-card__price,
+		.price-card__order-btn {
+			background: #ec632a;
+		}
+		svg {
+			fill: #ec632a;
+		}
+	}
+	&__badge {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(30px, 30px) rotate(45deg);
+		height: 25px;
+		width: 147px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		font-size: 14px;
+		color: #ffffff;
+		text-transform: uppercase;
+		background: #dc3f45;
+	}
+	&__title {
+		font-size: 35px;
+		line-height: 43px;
+		font-weight: 700;
+		margin-top: 33px;
+	}
+
+	&__subtitle {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 33px;
+	}
+
+	&__price {
+		font-weight: 700;
+		font-size: 55px;
+		height: 105px;
+		color: #ffffff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__description {
+		line-height: 18px;
+		margin: 40px 26px;
+
+		color: #ffffff;
+	}
+
+	&__options-list {
+		text-align: left;
+	}
+
+	&__option-item {
+		height: 50px;
+		display: flex;
+		align-items: center;
+		padding: 0 21px 0 0;
+		&:nth-child(odd) {
+			background: hsla(197, 14%, 19%, 0.5);
+		}
+		svg {
+			fill: #5bb189;
+			display: block;
+			margin: 0 22px;
+		}
+	}
+
+	&__order-btn {
+		display: inline-flex;
+		align-items: center;
+		height: 40px;
+		text-transform: uppercase;
+		padding: 0 27px;
+		margin: 40px auto;
+		border-radius: 20px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #ffffff;
+		cursor: pointer;
+	}
+}
