@@ -2,7 +2,7 @@
 
 Responsive-Landing-Page
 
-https://iuriikyrylovskyi.github.io/Foundation
+https://iuriikyrylovskyi.github.io/Project-2
 
 Layout supports all mobile and desktop versions
 
